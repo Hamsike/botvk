@@ -9,7 +9,7 @@ def auth_handler():
 
 
 def main():
-    login, password = '89088902769', 'hamsike@2003'
+    login, password = LOGIN, PASSWORD
     vk_session = vk_api.VkApi(login, password, auth_handler=auth_handler)
     try:
         vk_session.auth()
